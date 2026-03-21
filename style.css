@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Indie+Flower&family=Jacquard+12&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+body{
+    background:
+        radial-gradient(circle, rgba(255, 213, 213, 0.5) 0%, rgba(0, 0, 0, 0.8) 98%),
+        repeating-linear-gradient(
+            90deg,
+            rgba(80, 56, 20, 0.342) 0px 5px,
+            rgba(255, 255, 255, 0.473) 5px 10px,
+            rgba(231, 170, 0, 0.438) 10px 15px,
+            transparent 6px 10px
+        ),
+        repeating-linear-gradient(
+            45deg,
+            rgba(77, 34, 34, 0.452) 0px 5px,
+            transparent 1px 9px
+        ),
+        
+        repeating-linear-gradient(
+            0deg,
+            rgba(95, 41, 16, 0.575) 0px 5px,
+            rgba(214, 201, 157, 0.788) 5px 10px,
+            rgba(219, 117, 20, 0.445) 10px 15px,
+            rgba(197, 2, 138, 0.562) 15px 20px,
+            rgba(85, 117, 42, 0.548) 20px 25px,
+            rgba(248, 232, 4, 0.678) 25px 30px
+        ),
+
+        rgb(0, 0, 0);
+}
+
+.album{
+    justify-content: center;
+    display:flex;
+    padding: 20px;
+    box-sizing: border-box; /*calcula a margem no tamanho da pagina*/
+    gap:105px;
+    flex-wrap:wrap; /*permite o item pular para a proxima linha*/
+    align-items: stretch;
+    background: none;
+}
+
+.card{
+    align-items: center;
+    display: flex;
+    flex:calc(33.33% -30px);
+    flex-direction: column; 
+    overflow: hidden; /*nao mostra a parte da imagem que fica fora do container*/   
+    background: none;
+    gap:15px;
+}
+
+.titulo{
+color:rgb(255, 216, 242);
+font-size: 40px;
+/*font-family: "Indie Flower", cursive;
+font-family: "UnifrakturMaguntia", cursive;*/
+font-family: "New Rocker", system-ui;/*
+font-family: "Cinzel Decorative", serif;
+font-family: "Jacquard 12", system-ui;*/
+}
+
+.imagem{
+height: 400px;
+width: auto;
+object-fit:cover; /*faz a imagem caber no container, sem achatar*/ 
+border: 2px;
+border-radius: 25px;
+
+}
+
+.botao{
+background-color: rgb(255, 216, 242);
+color:rgb(255, 255, 255);
+padding: 20px 110px;
+font-size: 30px;
+border-radius: 50px;
+border-color: rgb(255, 216, 242);
+}

@@ -1,0 +1,91 @@
+body {
+    background-image: url('img/foto.jpg');
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.linha1 {
+position: fixed;
+    background-color: rgb(255, 0, 0);
+    height:5px;
+    width: 150%;
+    transform: rotate(146deg);
+    left:-116vw;
+    top:75vh;
+    
+}
+.linha2 {
+position: fixed;
+    background-color: rgb(255, 123, 0);
+    height:5px;
+    width: 150%;
+    transform: rotate(146deg);
+    left:-103vw;
+    top:75vh;
+}
+
+.linha3 {
+position: fixed;
+    background-color: rgb(217, 255, 0);
+    height:5px;
+    width: 150%;
+    transform: rotate(146deg);
+    left:-89vw;
+    top:75vh;
+}
+.linha4 {
+position: fixed;
+    background-color: rgb(2, 255, 57);
+    height:5px;
+    width: 150%;
+    transform: rotate(144deg);
+    left:-75vw;
+    top:75vh;
+}
+.linha5 {
+position: fixed;
+    background-color: rgb(2, 255, 242);
+    height:5px;
+    width: 150%;
+    transform: rotate(144deg);
+    left:-63vw;
+    top:75vh;
+}
+.linha6 {
+position: fixed;
+    background-color: rgb(2, 27, 255);
+    height:5px;
+    width: 150%;
+    transform: rotate(144deg);
+    left:-51vw;
+    top:75vh;
+}
+.linha7 {
+position: fixed;
+    background-color: rgb(162, 0, 255);
+    height:5px;
+    width: 130%;
+    transform: rotate(143deg);
+    left:-29vw;
+    top:75vh;
+}
+.linha8 {
+position: fixed;
+    background-color: rgb(255, 0, 212);
+    height:5px;
+    width: 130%;
+    transform: rotate(143deg);
+    left:-18vw;
+    top:75vh;
+}
+.linha9{
+    position: fixed;
+    background-color: rgb(255, 0, 55);
+    height:5px;
+    width: 120%;
+    transform: rotate(142deg);
+    left:-2vw;
+    top:75vh;
+
+}

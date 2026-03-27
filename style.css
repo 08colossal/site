@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Indie+Flower&family=Jacquard+12&family=UnifrakturMaguntia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
+:root{
+    --cor: rgb(72, 1, 1);
+    --back: rgb(152, 0, 0);
+}
+
 body{
-    background:
+    /*background:
         radial-gradient(circle, rgba(255, 213, 213, 0.5) 0%, rgba(0, 0, 0, 0.8) 98%),
         repeating-linear-gradient(
             90deg,
@@ -25,9 +30,12 @@ body{
             rgba(197, 2, 138, 0.562) 15px 20px,
             rgba(85, 117, 42, 0.548) 20px 25px,
             rgba(248, 232, 4, 0.678) 25px 30px
-        ),
+        ),*/
+        background:
+        radial-gradient(
+            circle,rgba(80, 0, 0) 15%, rgb(152, 0, 0) 90%
+        )
 
-        rgb(0, 0, 0);
 }
 
 .album{
@@ -52,7 +60,7 @@ body{
 }
 
 .titulo{
-color:rgb(255, 216, 242);
+color:var(--cor);
 font-size: 40px;
 /*font-family: "Indie Flower", cursive;
 font-family: "UnifrakturMaguntia", cursive;*/
@@ -65,16 +73,24 @@ font-family: "Jacquard 12", system-ui;*/
 height: 400px;
 width: auto;
 object-fit:cover; /*faz a imagem caber no container, sem achatar*/ 
-border: 2px;
 border-radius: 25px;
+border:4px solid transparent;
+}
 
+.imagem:hover{
+    border-color:var(--back);
 }
 
 .botao{
-background-color: rgb(255, 216, 242);
-color:rgb(168, 136, 97);
+background-color:var(--cor);
+color:var(--back);
 padding: 20px 110px;
 font-size: 30px;
 border-radius: 50px;
-border-color: rgb(255, 216, 242);
+border-color: --cor;
+}
+
+.botao:hover{
+    background-color:var(--back);
+    color:var(--cor);
 }

@@ -1,0 +1,15 @@
+:root{
+    --cor: rgb(72, 1, 1);
+    --back: rgb(152, 0, 0);
+}
+.menu a {
+        display: inline-block;  /* links lado a lado */
+        text-decoration: none;
+        padding: 14px 20px;
+        color:var(--back);
+
+}
+.menu a:hover {
+        color: var(--cor);
+        border-radius: 50px;
+    }

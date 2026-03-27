@@ -38,6 +38,38 @@ body{
 
 }
 
+.menu{
+    z-index: 1000;
+    position:fixed;
+    top:0%;
+    left:0%;
+    right:0%;
+    height: 50px;
+    width: 100%;
+    background-color: aquamarine;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+ .menu a {
+        display: inline-block;  /* links lado a lado */
+        text-decoration: none;
+        padding: 14px 20px; 
+        transition: background 0.3s;
+
+}
+.menu a:hover {
+        background-color: #575757;
+        border-radius: 50px;
+    }
+
+    /* Responsividade: empilha os links em telas pequenas */
+    @media (max-width: 600px) {
+        .menu a {
+            display: block;
+            text-align: left;
+        }
+    }
 .album{
     justify-content: center;
     display:flex;
@@ -94,3 +126,4 @@ border-color: --cor;
     background-color:var(--back);
     color:var(--cor);
 }
+
